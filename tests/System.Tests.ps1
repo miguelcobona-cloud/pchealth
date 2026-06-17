@@ -48,7 +48,9 @@ Describe 'Project layout' {
         (Test-Path (Join-Path $proj 'scripts\collect-baseline.ps1')) | Should Be $true
         (Test-Path (Join-Path $proj 'scripts\Compare-Baseline.ps1')) | Should Be $true
         (Test-Path (Join-Path $proj 'scripts\Install-PcHealthDesktop.ps1')) | Should Be $true
+        (Test-Path (Join-Path $proj 'config\machine.json')) | Should Be $true
+        (Test-Path (Join-Path $proj 'config\machine.json.example')) | Should Be $true
         (Test-Path (Join-Path $proj 'assets\icon.ico')) | Should Be $true
-        (Test-Path (Join-Path $proj 'docs\06-action-plan.md')) | Should Be $true
+        (Test-Path (Join-Path $proj 'pchealth-gui.ps1')) | Should Be $true
     }
 }

@@ -32,7 +32,7 @@ Compared to the GitHub landscape, these strengths are uncommon together:
 2. **Actionable, low-risk optimizations** — high-performance power plan, SSD TRIM, lite cleanup, SQL service stop — with admin gates and a live log.
 3. **Structured baseline** — `data/baseline.json` with hostname, modules, physical disk health, pagefile, startup list, top processes.
 4. **Polished WinForms GUI** — themed dashboard, metric cards, tabbed workflow (Dashboard / Optimize / Disk / Drivers / Log), 30 s auto-refresh.
-5. **Workload-aware content** — disk cleanup notes for SOLIDWORKS/MATLAB folders, Lenovo L450 driver guidance, SQL Express service names.
+5. **Workload-aware content** — hints de Downloads y procesos CAD/IDE vía `config/machine.json` (local opcional).
 
 ---
 
@@ -170,7 +170,7 @@ PC Health could add a **“CAD workload” profile** that watches `SLDWORKS`, `M
 | Event log / BSOD summary | WinDiag-AI | Not collected | **P1** |
 | HTML client report | WinDiag-AI, GetComputerHealth | Markdown only | **P1** |
 | CAD-specific process watch | SOLIDWORKS best practices | Generic top-12 RAM | **P1** |
-| Config-driven machine profile | — | Hardcoded L450 / SQL names | **P2** |
+| Config-driven machine profile | — | `config/machine.json` + opcional `.local` | **P2** |
 | Pester / CI tests | Winrift | None | **P2** |
 | System Restore before changes | Winrift | None | **P2** |
 | Optional local AI summary | PC-AI, WinDiag-AI | None | **P3** |

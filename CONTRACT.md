@@ -72,8 +72,14 @@ Esto:
 
 Ningún cambio P0+ se ejecuta automáticamente. El cliente aprueba cada ítem del plan.
 
-## Fecha de engagement
+## Registro de engagement (opcional)
 
-- **Inicio**: 2026-06-16
-- **Equipo**: LENOVO 20CLA32VLM (ThinkPad L450)
-- **Estado**: Análisis inicial completado
+Completa localmente si usas la metodología CS; no es necesario para ejecutar la app.
+
+| Campo | Valor |
+|-------|--------|
+| **Inicio** | _fecha_ |
+| **Equipo** | _modelo / serial (ver `data/baseline.json`)_ |
+| **Estado** | _en curso / completado_ |
+
+Perfil opcional del equipo: copia `config/machine.json.example` → `config/machine.json` y edítalo en tu máquina (no subas datos personales al repositorio).

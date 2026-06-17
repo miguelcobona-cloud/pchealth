@@ -1,9 +1,9 @@
 {
   "version": 1,
   "machine": {
-    "label": "Equipo Windows",
-    "model": "",
-    "manufacturer": ""
+    "label": "Mi equipo de trabajo",
+    "model": "MODELO-OEM",
+    "manufacturer": "Fabricante"
   },
   "thresholds": {
     "ram_warning_gb": 8,
@@ -16,7 +16,7 @@
   },
   "sql_services": {
     "name_patterns": ["MSSQL$*", "MSSQLSERVER", "SQLBrowser"],
-    "known_instances": []
+    "known_instances": ["SQLEXPRESS"]
   },
   "support_urls": {
     "Lenovo": "https://pcsupport.lenovo.com/",
@@ -28,16 +28,16 @@
   "downloads": {
     "min_folder_bytes": 52428800,
     "large_folder_hints": [
-      { "name_contains": "installer", "hint": "Carpetas de instaladores — mover a archivo externo si ya no se necesitan" },
-      { "name_contains": "setup", "hint": "Posibles instaladores — revisar antes de borrar" },
-      { "name_contains": "temp", "hint": "Carpeta temporal — candidata a limpieza si no esta en uso" }
+      { "name_contains": "MiCarpetaGrande", "hint": "Descripcion opcional para la pestaña Disco" }
     ]
   },
   "drivers": {
-    "banner": "Actualiza drivers desde el sitio del fabricante de tu equipo (Lenovo, Dell, HP, etc.).",
-    "notes": {}
+    "banner": "Mensaje opcional en la pestaña Drivers.",
+    "notes": {
+      "Nombre exacto del dispositivo en Administrador de dispositivos": "Nota para el informe de drivers"
+    }
   },
-  "workload_processes": ["SLDWORKS", "MATLAB", "sqlservr", "MsMpEng", "Code", "Cursor"],
+  "workload_processes": ["SLDWORKS", "MATLAB", "sqlservr"],
   "score": {
     "weights": {
       "memory": 25,
@@ -47,9 +47,6 @@
       "power": 10,
       "software_risk": 15
     },
-    "grades": {
-      "good": 75,
-      "fair": 55
-    }
+    "grades": { "good": 75, "fair": 55 }
   }
 }

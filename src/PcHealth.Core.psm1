@@ -145,12 +145,13 @@ function Get-PcMachineConfig {
         else { $ProjectRoot = (Get-Location).Path }
     }
 
+    $localPath = Join-Path $ProjectRoot 'config\machine.local.json'
     $path = Join-Path $ProjectRoot 'config\machine.json'
-    if (Test-Path $path) {
-        try {
-            return Get-Content -Path $path -Raw -Encoding UTF8 | ConvertFrom-Json
-        } catch {
-            return Get-PcDefaultMachineConfig
+    foreach ($cfgPath in @($localPath, $path)) {
+        if (Test-Path $cfgPath) {
+            try {
+                return Get-Content -Path $cfgPath -Raw -Encoding UTF8 | ConvertFrom-Json
+            } catch { }
         }
     }
     return Get-PcDefaultMachineConfig
@@ -172,9 +173,7 @@ function Get-PcDriverNoteMap {
         }
     }
     if ($map.Count -eq 0) {
-        $map = @{
-            'Intel(R) HD Graphics 5500' = 'GPU — revisar fabricante'
-        }
+        return @{}
     }
     return $map
 }

@@ -36,14 +36,18 @@ Crea accesos directos en **Escritorio** y **Menú Inicio** (sin ventana de conso
 
 ## Configuración
 
-Edita [`config/machine.json`](config/machine.json) para umbrales, servicios SQL, hints de Downloads y pesos del health score.
+- **`config/machine.json`** — valores genéricos incluidos en el repo.
+- **`config/machine.local.json`** — opcional, **no se sube a Git**; copia desde [`machine.json.example`](config/machine.json.example) para tu equipo (SQL, drivers, hints Downloads).
 
 ## Estructura
 
 ```
 pchealth/
 ├── assets/                 # Icono y branding (icon.ico, logo-header.png)
-├── config/machine.json
+├── config/
+│   ├── machine.json          # Genérico (repo)
+│   ├── machine.json.example  # Plantilla
+│   └── machine.local.json    # Tu equipo (local, gitignore)
 ├── src/                    # Módulos PowerShell
 ├── pchealth-gui.ps1        # Aplicación de escritorio (WinForms)
 ├── scripts/

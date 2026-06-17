@@ -613,7 +613,8 @@ $lblAppSub.Location = New-Object System.Drawing.Point(72, 42)
 $lblAppSub.AutoSize = $true
 
 $picLogo = $null
-$logoPath = Join-Path $root 'assets\logo-header.png'
+$logoPath = Join-Path $root 'assets\icon-256.png'
+if (-not (Test-Path $logoPath)) { $logoPath = Join-Path $root 'assets\logo-header.png' }
 if (Test-Path $logoPath) {
     try {
         $picLogo = New-Object System.Windows.Forms.PictureBox
