@@ -1,7 +1,8 @@
 # PC Health
 
 <p align="center">
-  <img src="assets/icon-256.png" alt="PC Health" width="96" height="96">
+  <img src="assets/<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/db9fd838-b962-4814-b0f0-cfae608a21c9" />
+" alt="PC Health" width="96" height="96">
 </p>
 
 **Customer Success–style PC health engagement for Windows workstations** — diagnose, document, optimize with evidence.
