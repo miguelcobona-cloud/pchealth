@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "machine": {
+    "label": "Lenovo ThinkPad L450",
+    "model": "20CLA32VLM",
+    "manufacturer": "Lenovo"
+  },
+  "thresholds": {
+    "ram_warning_gb": 8,
+    "ram_ideal_gb": 16,
+    "disk_used_warn_pct": 75,
+    "disk_used_critical_pct": 85,
+    "cpu_load_warn_pct": 80,
+    "startup_count_warn": 15,
+    "pagefile_usage_warn_ratio": 0.5
+  },
+  "sql_services": {
+    "name_patterns": ["MSSQL$*", "MSSQLSERVER", "SQLBrowser"],
+    "known_instances": ["TEW_SQLEXPRESS"]
+  },
+  "support_urls": {
+    "Lenovo": "https://pcsupport.lenovo.com/",
+    "Dell": "https://www.dell.com/support/home",
+    "HP": "https://support.hp.com/",
+    "ASUS": "https://www.asus.com/support/",
+    "default": "https://www.google.com/search?q=windows+10+drivers+download"
+  },
+  "downloads": {
+    "min_folder_bytes": 52428800,
+    "large_folder_hints": [
+      { "name_contains": "Solidworks", "hint": "Instaladores SOLIDWORKS — mover o borrar si ya instalado" },
+      { "name_contains": "mat", "hint": "Instaladores MATLAB — conservar solo la version activa" },
+      { "name_contains": "PSP", "hint": "Carpeta de juegos/emulador — candidata a archivo externo" }
+    ]
+  },
+  "drivers": {
+    "banner": "GPU HD 5500 ya en ultima version. Actualiza chipset, SATA y Ethernet con Lenovo System Update.",
+    "notes": {
+      "Intel(R) HD Graphics 5500": "GPU — ya en ultima version posible",
+      "Intel(R) 9 Series Chipset Family SATA AHCI Controller": "Chipset/SATA — actualizar via Lenovo",
+      "Intel(R) Ethernet Connection (3) I218-LM": "Ethernet — actualizar via Lenovo",
+      "Realtek High Definition Audio": "Audio — opcional Lenovo",
+      "Intel(R) Dual Band Wireless-N 7265": "WiFi — OK si 2024"
+    }
+  },
+  "workload_processes": ["SLDWORKS", "MATLAB", "sqlservr", "MsMpEng"],
+  "score": {
+    "weights": {
+      "memory": 25,
+      "storage": 20,
+      "cpu_pressure": 15,
+      "startup_bloat": 15,
+      "power": 10,
+      "software_risk": 15
+    },
+    "grades": {
+      "good": 75,
+      "fair": 55
+    }
+  }
+}

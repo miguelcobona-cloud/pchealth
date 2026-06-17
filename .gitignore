@@ -1,0 +1,23 @@
+# Datos locales del equipo (regenerables)
+data/*.json
+!data/.gitkeep
+
+# Informes generados localmente
+docs/baseline-comparison.md
+
+# Assets fuente en alta resolucion (opcional en disco local)
+assets/icon.png
+assets/logo.png
+assets/splash.png
+assets/banner.png
+img/
+
+# Launcher VBS generado al instalar
+PC Health.vbs
+
+# Windows / editor
+Thumbs.db
+Desktop.ini
+.vs/
+.idea/
+*.user
