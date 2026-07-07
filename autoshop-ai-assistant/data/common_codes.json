@@ -1,0 +1,540 @@
+{
+  "P0300": {
+    "description_en": "Random/Multiple Cylinder Misfire Detected",
+    "description_es": "Fallo de encendido aleatorio/múltiple detectado",
+    "causes_en": [
+      "Worn spark plugs or ignition coils",
+      "Vacuum leak",
+      "Low fuel pressure",
+      "Faulty fuel injector"
+    ],
+    "causes_es": [
+      "Bujías o bobinas de encendido desgastadas",
+      "Fuga de vacío",
+      "Presión de combustible baja",
+      "Inyector de combustible defectuoso"
+    ],
+    "steps_en": [
+      "Scan for additional codes (P0301-P0308) to identify the cylinder",
+      "Inspect spark plugs and ignition coils",
+      "Check for vacuum leaks around intake manifold",
+      "Verify fuel pressure at the rail"
+    ],
+    "steps_es": [
+      "Escanear códigos adicionales (P0301-P0308) para identificar el cilindro",
+      "Inspeccionar bujías y bobinas de encendido",
+      "Revisar fugas de vacío en el múltiple de admisión",
+      "Verificar presión de combustible en el riel"
+    ],
+    "urgency": "medium",
+    "professional_required": false
+  },
+  "P0301": {
+    "description_en": "Cylinder 1 Misfire Detected",
+    "description_es": "Fallo de encendido en cilindro 1 detectado",
+    "causes_en": [
+      "Bad spark plug or coil on cylinder 1",
+      "Compression loss in cylinder 1",
+      "Clogged or leaking injector on cylinder 1"
+    ],
+    "causes_es": [
+      "Bujía o bobina defectuosa en cilindro 1",
+      "Pérdida de compresión en cilindro 1",
+      "Inyector obstruido o con fuga en cilindro 1"
+    ],
+    "steps_en": [
+      "Swap coil/plug with another cylinder and rescan",
+      "Perform compression test on cylinder 1",
+      "Inspect injector wiring and connector"
+    ],
+    "steps_es": [
+      "Intercambiar bobina/bujía con otro cilindro y volver a escanear",
+      "Realizar prueba de compresión en cilindro 1",
+      "Inspeccionar cableado y conector del inyector"
+    ],
+    "urgency": "medium",
+    "professional_required": false
+  },
+  "P0420": {
+    "description_en": "Catalyst System Efficiency Below Threshold (Bank 1)",
+    "description_es": "Eficiencia del catalizador por debajo del umbral (Banco 1)",
+    "causes_en": [
+      "Aging or failed catalytic converter",
+      "Exhaust leak upstream of the O2 sensor",
+      "Faulty downstream oxygen sensor"
+    ],
+    "causes_es": [
+      "Convertidor catalítico envejecido o dañado",
+      "Fuga de escape antes del sensor de O2",
+      "Sensor de oxígeno posterior defectuoso"
+    ],
+    "steps_en": [
+      "Verify no exhaust leaks before the catalyst",
+      "Compare upstream vs downstream O2 sensor readings",
+      "Check for underlying misfire or rich/lean codes first"
+    ],
+    "steps_es": [
+      "Verificar que no haya fugas de escape antes del catalizador",
+      "Comparar lecturas del sensor O2 anterior y posterior",
+      "Revisar primero códigos de fallo de encendido o mezcla rica/pobre"
+    ],
+    "urgency": "low",
+    "professional_required": false
+  },
+  "P0171": {
+    "description_en": "System Too Lean (Bank 1)",
+    "description_es": "Sistema demasiado pobre (Banco 1)",
+    "causes_en": [
+      "Vacuum leak",
+      "Dirty or failing MAF sensor",
+      "Weak fuel pump or clogged fuel filter",
+      "Leaking intake gasket"
+    ],
+    "causes_es": [
+      "Fuga de vacío",
+      "Sensor MAF sucio o defectuoso",
+      "Bomba de combustible débil o filtro obstruido",
+      "Empaque del múltiple de admisión con fuga"
+    ],
+    "steps_en": [
+      "Inspect all vacuum hoses and intake boots",
+      "Clean or test the MAF sensor",
+      "Check fuel pressure and filter condition",
+      "Look for hissing sounds at idle near the intake"
+    ],
+    "steps_es": [
+      "Inspeccionar mangueras de vacío y boots del admisión",
+      "Limpiar o probar el sensor MAF",
+      "Verificar presión de combustible y estado del filtro",
+      "Buscar silbidos al ralentí cerca del admisión"
+    ],
+    "urgency": "medium",
+    "professional_required": false
+  },
+  "P0172": {
+    "description_en": "System Too Rich (Bank 1)",
+    "description_es": "Sistema demasiado rico (Banco 1)",
+    "causes_en": [
+      "Leaking fuel injector",
+      "Faulty fuel pressure regulator",
+      "Dirty or stuck EVAP purge valve",
+      "Contaminated MAF sensor"
+    ],
+    "causes_es": [
+      "Inyector de combustible con fuga",
+      "Regulador de presión de combustible defectuoso",
+      "Válvula de purga EVAP sucia o atascada",
+      "Sensor MAF contaminado"
+    ],
+    "steps_en": [
+      "Check for fuel smell and wet spark plugs",
+      "Test fuel pressure (high pressure suggests regulator issue)",
+      "Inspect EVAP purge valve operation",
+      "Review short-term and long-term fuel trim values"
+    ],
+    "steps_es": [
+      "Revisar olor a combustible y bujías húmedas",
+      "Probar presión de combustible (presión alta sugiere regulador)",
+      "Inspeccionar operación de la válvula de purga EVAP",
+      "Revisar valores de corrección de combustible a corto y largo plazo"
+    ],
+    "urgency": "medium",
+    "professional_required": false
+  },
+  "P0442": {
+    "description_en": "EVAP System Leak Detected (Small Leak)",
+    "description_es": "Fuga pequeña detectada en sistema EVAP",
+    "causes_en": [
+      "Loose or missing gas cap",
+      "Cracked EVAP hose",
+      "Faulty purge or vent valve"
+    ],
+    "causes_es": [
+      "Tapón de gasolina flojo o faltante",
+      "Manguera EVAP agrietada",
+      "Válvula de purga o ventilación defectuosa"
+    ],
+    "steps_en": [
+      "Inspect and tighten or replace the gas cap",
+      "Check EVAP hoses near the tank and canister",
+      "Perform smoke test if the code returns after cap replacement"
+    ],
+    "steps_es": [
+      "Inspeccionar, apretar o reemplazar el tapón de gasolina",
+      "Revisar mangueras EVAP cerca del tanque y el canister",
+      "Realizar prueba de humo si el código regresa tras cambiar el tapón"
+    ],
+    "urgency": "low",
+    "professional_required": false
+  },
+  "P0128": {
+    "description_en": "Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)",
+    "description_es": "Termostato de refrigerante (temperatura por debajo del rango regulado)",
+    "causes_en": [
+      "Stuck-open thermostat",
+      "Low coolant level",
+      "Faulty coolant temperature sensor"
+    ],
+    "causes_es": [
+      "Termostato atascado abierto",
+      "Nivel bajo de refrigerante",
+      "Sensor de temperatura de refrigerante defectuoso"
+    ],
+    "steps_en": [
+      "Verify coolant level when engine is cold",
+      "Monitor warm-up time and heater output",
+      "Test thermostat opening temperature"
+    ],
+    "steps_es": [
+      "Verificar nivel de refrigerante con motor frío",
+      "Monitorear tiempo de calentamiento y salida del calefactor",
+      "Probar temperatura de apertura del termostato"
+    ],
+    "urgency": "low",
+    "professional_required": false
+  },
+  "P0217": {
+    "description_en": "Engine Coolant Over Temperature Condition",
+    "description_es": "Condición de sobrecalentamiento del motor",
+    "causes_en": [
+      "Low coolant level or leak",
+      "Failed water pump",
+      "Blocked radiator or cooling fan not running",
+      "Stuck-closed thermostat"
+    ],
+    "causes_es": [
+      "Nivel bajo de refrigerante o fuga",
+      "Bomba de agua dañada",
+      "Radiador obstruido o ventilador sin funcionar",
+      "Termostato atascado cerrado"
+    ],
+    "steps_en": [
+      "Stop driving immediately if temperature gauge is in the red",
+      "Do not open radiator cap on a hot engine",
+      "Check coolant level when safe and cold",
+      "Inspect for leaks, fan operation, and belt condition"
+    ],
+    "steps_es": [
+      "Dejar de conducir de inmediato si la temperatura está en rojo",
+      "No abrir el tapón del radiador con motor caliente",
+      "Verificar nivel de refrigerante cuando sea seguro y esté frío",
+      "Inspeccionar fugas, operación del ventilador y estado de la banda"
+    ],
+    "urgency": "critical",
+    "professional_required": true
+  },
+  "P0507": {
+    "description_en": "Idle Control System RPM Higher Than Expected",
+    "description_es": "RPM de ralentí más altas de lo esperado",
+    "causes_en": [
+      "Vacuum leak",
+      "Dirty throttle body",
+      "Stuck idle air control valve",
+      "PCV valve issue"
+    ],
+    "causes_es": [
+      "Fuga de vacío",
+      "Cuerpo de aceleración sucio",
+      "Válvula IAC atascada",
+      "Problema en válvula PCV"
+    ],
+    "steps_en": [
+      "Clean throttle body and relearn idle if required",
+      "Check for vacuum leaks with smoke or propane test",
+      "Inspect IAC valve and PCV system"
+    ],
+    "steps_es": [
+      "Limpiar cuerpo de aceleración y recalibrar ralentí si aplica",
+      "Buscar fugas de vacío con humo o prueba de propano",
+      "Inspeccionar válvula IAC y sistema PCV"
+    ],
+    "urgency": "low",
+    "professional_required": false
+  },
+  "P0700": {
+    "description_en": "Transmission Control System Malfunction",
+    "description_es": "Falla en el sistema de control de transmisión",
+    "causes_en": [
+      "Transmission-specific fault stored (scan TCM)",
+      "Low or degraded transmission fluid",
+      "Faulty shift solenoid or sensor"
+    ],
+    "causes_es": [
+      "Falla específica de transmisión almacenada (escanear TCM)",
+      "Fluido de transmisión bajo o degradado",
+      "Solenoide de cambio o sensor defectuoso"
+    ],
+    "steps_en": [
+      "Scan transmission module for additional codes",
+      "Check transmission fluid level and condition",
+      "Note slipping, harsh shifts, or delayed engagement"
+    ],
+    "steps_es": [
+      "Escanear módulo de transmisión para códigos adicionales",
+      "Verificar nivel y condición del fluido de transmisión",
+      "Anotar patinaje, cambios bruscos o demora al engranar"
+    ],
+    "urgency": "medium",
+    "professional_required": true
+  },
+  "P0340": {
+    "description_en": "Camshaft Position Sensor Circuit Malfunction",
+    "description_es": "Falla en circuito del sensor de posición del árbol de levas",
+    "causes_en": [
+      "Failed camshaft position sensor",
+      "Damaged wiring or connector",
+      "Timing chain/belt issue (if accompanied by noise or rough running)"
+    ],
+    "causes_es": [
+      "Sensor de posición de levas defectuoso",
+      "Cableado o conector dañado",
+      "Problema en cadena/correa de distribución (si hay ruido o fallo)"
+    ],
+    "steps_en": [
+      "Inspect sensor connector and wiring harness",
+      "Check sensor signal with a scan tool",
+      "If engine cranks but won't start, verify timing components"
+    ],
+    "steps_es": [
+      "Inspeccionar conector del sensor y arnés",
+      "Verificar señal del sensor con escáner",
+      "Si gira pero no arranca, verificar componentes de distribución"
+    ],
+    "urgency": "high",
+    "professional_required": true
+  },
+  "P0455": {
+    "description_en": "EVAP System Leak Detected (Large Leak)",
+    "description_es": "Fuga grande detectada en sistema EVAP",
+    "causes_en": [
+      "Missing or damaged gas cap",
+      "Disconnected EVAP hose",
+      "Failed charcoal canister or vent valve"
+    ],
+    "causes_es": [
+      "Tapón de gasolina faltante o dañado",
+      "Manguera EVAP desconectada",
+      "Canister de carbón o válvula de ventilación dañados"
+    ],
+    "steps_en": [
+      "Confirm gas cap is present and seals correctly",
+      "Visually inspect EVAP lines from tank to engine bay",
+      "Run smoke test to locate large leaks"
+    ],
+    "steps_es": [
+      "Confirmar que el tapón esté presente y selle correctamente",
+      "Inspeccionar visualmente líneas EVAP del tanque al motor",
+      "Realizar prueba de humo para localizar fugas grandes"
+    ],
+    "urgency": "low",
+    "professional_required": false
+  },
+  "P0135": {
+    "description_en": "O2 Sensor Heater Circuit Malfunction (Bank 1 Sensor 1)",
+    "description_es": "Falla en circuito del calentador del sensor O2 (Banco 1 Sensor 1)",
+    "causes_en": [
+      "Failed upstream oxygen sensor heater",
+      "Blown fuse for O2 heater circuit",
+      "Wiring short or open circuit"
+    ],
+    "causes_es": [
+      "Calentador del sensor O2 anterior defectuoso",
+      "Fusible del circuito del calentador O2 fundido",
+      "Corto o circuito abierto en cableado"
+    ],
+    "steps_en": [
+      "Check related fuse in the fuse box",
+      "Inspect wiring near exhaust manifold for heat damage",
+      "Test sensor heater resistance if accessible"
+    ],
+    "steps_es": [
+      "Revisar fusible relacionado en la caja de fusibles",
+      "Inspeccionar cableado cerca del múltiple de escape por daño térmico",
+      "Probar resistencia del calentador del sensor si es accesible"
+    ],
+    "urgency": "low",
+    "professional_required": false
+  },
+  "P0401": {
+    "description_en": "Exhaust Gas Recirculation (EGR) Flow Insufficient",
+    "description_es": "Flujo de recirculación de gases de escape (EGR) insuficiente",
+    "causes_en": [
+      "Carbon-clogged EGR valve or passages",
+      "Faulty EGR valve",
+      "DPF/EGR cooler restriction on diesel engines"
+    ],
+    "causes_es": [
+      "Válvula EGR o conductos obstruidos por carbón",
+      "Válvula EGR defectuosa",
+      "Restricción en enfriador EGR/DPF en motores diésel"
+    ],
+    "steps_en": [
+      "Remove and clean EGR valve and intake passages",
+      "Test EGR valve movement with vacuum or scan tool command",
+      "Check for related codes on diesel emissions systems"
+    ],
+    "steps_es": [
+      "Retirar y limpiar válvula EGR y conductos del admisión",
+      "Probar movimiento de válvula EGR con vacío o comando del escáner",
+      "Revisar códigos relacionados en sistemas de emisiones diésel"
+    ],
+    "urgency": "low",
+    "professional_required": false
+  },
+  "C0035": {
+    "description_en": "Left Front Wheel Speed Sensor Circuit",
+    "description_es": "Circuito del sensor de velocidad de rueda delantera izquierda",
+    "causes_en": [
+      "Damaged wheel speed sensor or tone ring",
+      "Corroded connector at the hub",
+      "Broken sensor wiring"
+    ],
+    "causes_es": [
+      "Sensor de velocidad de rueda o anillo fonético dañado",
+      "Conector corroído en el cubo",
+      "Cableado del sensor roto"
+    ],
+    "steps_en": [
+      "Inspect tone ring for cracks or debris",
+      "Check sensor gap and connector at the wheel hub",
+      "ABS/traction control may be disabled until repaired"
+    ],
+    "steps_es": [
+      "Inspeccionar anillo fonético por grietas o suciedad",
+      "Revisar gap del sensor y conector en el cubo",
+      "ABS/control de tracción puede quedar desactivado hasta reparar"
+    ],
+    "urgency": "medium",
+    "professional_required": true
+  },
+  "P0562": {
+    "description_en": "System Voltage Low",
+    "description_es": "Voltaje del sistema bajo",
+    "causes_en": [
+      "Weak or failing battery",
+      "Alternator not charging properly",
+      "Parasitic drain or loose battery terminals"
+    ],
+    "causes_es": [
+      "Batería débil o al final de su vida",
+      "Alternador que no carga correctamente",
+      "Consumo parásito o terminales de batería flojos"
+    ],
+    "steps_en": [
+      "Load-test battery and check terminal tightness",
+      "Measure charging voltage at idle (typically 13.5-14.5 V)",
+      "Inspect drive belt and alternator connections"
+    ],
+    "steps_es": [
+      "Probar batería bajo carga y apretar terminales",
+      "Medir voltaje de carga al ralentí (típicamente 13.5-14.5 V)",
+      "Inspeccionar banda y conexiones del alternador"
+    ],
+    "urgency": "medium",
+    "professional_required": false
+  },
+  "P0011": {
+    "description_en": "Intake Camshaft Position Timing Over-Advanced (Bank 1)",
+    "description_es": "Tiempo de levas de admisión demasiado adelantado (Banco 1)",
+    "causes_en": [
+      "Low or dirty engine oil affecting VVT solenoid",
+      "Faulty VVT solenoid or actuator",
+      "Timing chain stretch"
+    ],
+    "causes_es": [
+      "Aceite bajo o sucio afectando solenoide VVT",
+      "Solenoide o actuador VVT defectuoso",
+      "Cadena de distribución estirada"
+    ],
+    "steps_en": [
+      "Verify oil level and use correct viscosity oil",
+      "Listen for timing chain rattle on cold start",
+      "Professional diagnosis recommended for internal timing issues"
+    ],
+    "steps_es": [
+      "Verificar nivel de aceite y usar viscosidad correcta",
+      "Escuchar traqueteo de cadena en arranque en frío",
+      "Se recomienda diagnóstico profesional para problemas internos de distribución"
+    ],
+    "urgency": "high",
+    "professional_required": true
+  },
+  "P0101": {
+    "description_en": "Mass or Volume Air Flow Circuit Range/Performance Problem",
+    "description_es": "Problema de rango/rendimiento en circuito de flujo de aire MAF",
+    "causes_en": [
+      "Contaminated MAF sensor",
+      "Intake air leak after the MAF sensor",
+      "Clogged air filter"
+    ],
+    "causes_es": [
+      "Sensor MAF contaminado",
+      "Fuga de aire después del sensor MAF",
+      "Filtro de aire obstruido"
+    ],
+    "steps_en": [
+      "Clean MAF sensor with appropriate cleaner only",
+      "Replace air filter if dirty",
+      "Inspect intake boot for cracks between MAF and throttle body"
+    ],
+    "steps_es": [
+      "Limpiar sensor MAF solo con limpiador apropiado",
+      "Reemplazar filtro de aire si está sucio",
+      "Inspeccionar boot del admisión entre MAF y cuerpo de aceleración"
+    ],
+    "urgency": "medium",
+    "professional_required": false
+  },
+  "P0113": {
+    "description_en": "Intake Air Temperature Sensor 1 Circuit High Input",
+    "description_es": "Entrada alta en circuito del sensor de temperatura de aire de admisión",
+    "causes_en": [
+      "Faulty IAT sensor",
+      "Short to voltage in sensor wiring",
+      "Disconnected sensor connector"
+    ],
+    "causes_es": [
+      "Sensor IAT defectuoso",
+      "Corto a voltaje en cableado del sensor",
+      "Conector del sensor desconectado"
+    ],
+    "steps_en": [
+      "Inspect IAT sensor connector near the air intake",
+      "Compare IAT reading with ambient temperature on scan tool",
+      "Check wiring for frayed insulation"
+    ],
+    "steps_es": [
+      "Inspeccionar conector IAT cerca del admisión de aire",
+      "Comparar lectura IAT con temperatura ambiente en escáner",
+      "Revisar cableado por aislamiento dañado"
+    ],
+    "urgency": "low",
+    "professional_required": false
+  },
+  "P2187": {
+    "description_en": "System Too Lean at Idle (Bank 1)",
+    "description_es": "Sistema demasiado pobre en ralentí (Banco 1)",
+    "causes_en": [
+      "Vacuum leak affecting idle only",
+      "Dirty throttle body",
+      "PCV system leak"
+    ],
+    "causes_es": [
+      "Fuga de vacío que afecta solo el ralentí",
+      "Cuerpo de aceleración sucio",
+      "Fuga en sistema PCV"
+    ],
+    "steps_en": [
+      "Clean throttle body and perform idle relearn",
+      "Check PCV valve and hoses",
+      "Smoke-test intake at idle"
+    ],
+    "steps_es": [
+      "Limpiar cuerpo de aceleración y recalibrar ralentí",
+      "Revisar válvula PCV y mangueras",
+      "Prueba de humo en admisión al ralentí"
+    ],
+    "urgency": "medium",
+    "professional_required": false
+  }
+}
