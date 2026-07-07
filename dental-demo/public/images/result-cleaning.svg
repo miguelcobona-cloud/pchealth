@@ -1,0 +1,16 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" rx="36" fill="#EEF6FF"/>
+  <rect x="40" y="40" width="820" height="1120" rx="30" fill="white"/>
+  <rect x="70" y="70" width="350" height="1060" rx="24" fill="#EDE8D7"/>
+  <rect x="480" y="70" width="350" height="1060" rx="24" fill="#E3F3FF"/>
+  <text x="245" y="132" text-anchor="middle" fill="#7F6B45" font-size="46" font-family="Arial" font-weight="700">ANTES</text>
+  <text x="655" y="132" text-anchor="middle" fill="#0055E3" font-size="46" font-family="Arial" font-weight="700">DESPUÉS</text>
+  <rect x="145" y="430" width="200" height="95" rx="28" fill="#D3C6A4"/>
+  <rect x="555" y="430" width="200" height="95" rx="28" fill="white"/>
+  <path d="M180 478H310" stroke="#B0A07B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M590 478H720" stroke="#D9E9FF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M300 340C360 360 378 410 340 450" stroke="#0055E3" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="304" cy="336" r="24" fill="#77AEFF"/>
+  <path d="M590 340C650 360 668 410 630 450" stroke="#0055E3" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="594" cy="336" r="24" fill="#77AEFF"/>
+</svg>
