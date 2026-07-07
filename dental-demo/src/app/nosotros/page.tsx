@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ABOUT_VALUES, CLINIC, LOCATIONS, TEAM } from "@/lib/data";
 
 export const metadata = {
@@ -7,13 +8,24 @@ export const metadata = {
 export default function NosotrosPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-[#dee8f8] to-[#fffffa] px-4 py-14">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#0055e3]">Nosotros</p>
-          <h1 className="mt-3 text-4xl font-bold md:text-5xl">Cuidamos sonrisas con calidez y precisión</h1>
-          <p className="mt-4 text-lg leading-8 text-slate-600">
-            En {CLINIC.name} combinamos experiencia clínica, tecnología y un trato cercano para que cada paciente se sienta acompañado.
-          </p>
+      <section className="bg-gradient-to-b from-[#dee8f8] to-[#fffffa] px-4 pt-12 pb-14 md:pt-16 md:pb-20">
+        <div className="mx-auto max-w-6xl grid gap-12 md:grid-cols-2 items-center">
+          <div className="text-center md:text-left">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#0055e3]">Nosotros</p>
+            <h1 className="mt-4 text-4xl font-bold md:text-5xl lg:text-6xl leading-tight">Cuidamos sonrisas con calidez y precisión</h1>
+            <p className="mt-6 text-lg leading-8 text-slate-600 max-w-xl">
+              En {CLINIC.name} combinamos experiencia clínica, tecnología y un trato cercano para que cada paciente se sienta acompañado en todo momento.
+            </p>
+          </div>
+          <div className="relative aspect-[3/2] overflow-hidden rounded-[32px] border border-blue-100 shadow-lg">
+            <Image
+              src="/images/hero-clinic.png"
+              alt="Instalaciones de Sonríe Dental"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 560px"
+            />
+          </div>
         </div>
       </section>
 

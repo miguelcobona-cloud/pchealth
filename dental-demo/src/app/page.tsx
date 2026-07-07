@@ -8,11 +8,20 @@ export default function Home() {
     <>
       <HeroSlideshow />
 
-      <section className="px-4 py-10">
+      <section className="bg-[#eef4fc] px-4 py-10">
         <div className="mx-auto grid max-w-6xl gap-4 md:grid-cols-3">
-          <div className="rounded-3xl bg-white p-6 shadow-sm"><h3 className="text-lg font-bold text-[#0055e3]">Primera consulta en $499</h3><p className="mt-2 text-sm text-slate-600">Evaluación completa con plan de tratamiento personalizado.</p></div>
-          <div className="rounded-3xl bg-white p-6 shadow-sm"><h3 className="text-lg font-bold text-[#0055e3]">3 meses sin intereses</h3><p className="mt-2 text-sm text-slate-600">En tratamientos seleccionados con tarjetas participantes.</p></div>
-          <div className="rounded-3xl bg-white p-6 shadow-sm"><h3 className="text-lg font-bold text-[#0055e3]">Agenda en minutos</h3><p className="mt-2 text-sm text-slate-600">Reserva desde web y recibe recordatorio automático.</p></div>
+          <div className="rounded-3xl bg-white p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-[#0055e3]">Primera consulta en $499</h3>
+            <p className="mt-2 text-sm text-slate-600">Evaluación completa con plan de tratamiento personalizado.</p>
+          </div>
+          <div className="rounded-3xl bg-white p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-[#0055e3]">3 meses sin intereses</h3>
+            <p className="mt-2 text-sm text-slate-600">En tratamientos seleccionados con tarjetas participantes.</p>
+          </div>
+          <div className="rounded-3xl bg-white p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-[#0055e3]">Agenda en minutos</h3>
+            <p className="mt-2 text-sm text-slate-600">Reserva en línea y recibe recordatorio por correo y WhatsApp.</p>
+          </div>
         </div>
       </section>
 

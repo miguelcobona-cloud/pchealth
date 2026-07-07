@@ -40,23 +40,21 @@ export const HERO_SLIDES = [
   {
     id: "s1",
     title: "Tu sonrisa merece lo mejor",
-    subtitle: "Clínica dental con agenda online 24/7, seguimiento por correo y atención por WhatsApp.",
-    theme: "from-[#0055e3] to-[#61a9ff]",
-    image: "/images/hero-clinic.svg",
+    subtitle: "Clínica dental en Monterrey con tecnología de vanguardia y atención humana.",
+    image: "/images/hero-clinic.png",
   },
   {
     id: "s2",
     title: "Resultados que se notan",
     subtitle: "Consulta, limpieza, blanqueamiento, ortodoncia y urgencias con una experiencia clara y profesional.",
-    theme: "from-[#0a4bbf] to-[#7bc4ff]",
-    image: "/images/hero-smile.svg",
+    image: "/images/hero-smile.png",
   },
 ] as const;
 
 export const RESULT_SLIDES = [
-  { id: "r1", treatment: "Blanqueamiento dental", name: "María G.", quote: "Llevaba años queriendo blanquear mis dientes. El cambio fue increíble.", accent: "from-sky-100 to-blue-200", image: "/images/result-whitening.svg" },
-  { id: "r2", treatment: "Limpieza dental", name: "Roberto S.", quote: "Agendé en línea en 2 minutos y me llegó el recordatorio por WhatsApp.", accent: "from-cyan-100 to-blue-200", image: "/images/result-cleaning.svg" },
-  { id: "r3", treatment: "Ortodoncia", name: "Laura M.", quote: "Mi sonrisa cambió por completo y el proceso fue muy claro desde el inicio.", accent: "from-blue-100 to-indigo-200", image: "/images/result-ortho.svg" },
+  { id: "r1", treatment: "Blanqueamiento dental", name: "María G.", quote: "Llevaba años queriendo blanquear mis dientes. El cambio fue increíble.", accent: "from-sky-100 to-blue-200", image: "/images/result-whitening.png" },
+  { id: "r2", treatment: "Limpieza dental", name: "Roberto S.", quote: "Agendé en línea en 2 minutos y me llegó el recordatorio por WhatsApp.", accent: "from-cyan-100 to-blue-200", image: "/images/result-cleaning.png" },
+  { id: "r3", treatment: "Ortodoncia", name: "Laura M.", quote: "Mi sonrisa cambió por completo y el proceso fue muy claro desde el inicio.", accent: "from-blue-100 to-indigo-200", image: "/images/result-ortho.png" },
 ] as const;
 
 export const ABOUT_VALUES = [

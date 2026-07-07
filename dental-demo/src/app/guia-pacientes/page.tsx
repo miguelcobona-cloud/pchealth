@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { GUIDE_FLOW } from "@/lib/data";
 
@@ -9,6 +10,7 @@ function Split({
   reverse,
   theme,
   subtitle,
+  image,
 }: {
   step: string;
   title: string;
@@ -17,13 +19,21 @@ function Split({
   highlights: readonly { title: string; description: string }[];
   reverse?: boolean;
   theme: string;
+  image: string;
 }) {
   const media = (
-    <div className={`min-h-[320px] w-full md:w-1/2 ${theme === "one" ? "bg-gradient-to-br from-[#0055e3] to-[#75baff]" : theme === "two" ? "bg-gradient-to-br from-[#d6ebff] to-[#8dc1ff]" : "bg-gradient-to-br from-[#cfe5ff] to-[#5fa4ff]"} p-8 text-white`}>
-      <div className="flex h-full flex-col justify-end">
-        <div className="inline-block rounded-full bg-white/20 px-4 py-2 text-sm font-semibold">Paso {step}</div>
-        <h3 className="mt-4 text-3xl font-bold">{title}</h3>
-        <p className="mt-3 max-w-md text-white/90">{subtitle ?? "Experiencia clara y acompañamiento profesional."}</p>
+    <div className={`relative min-h-[320px] w-full md:w-1/2 overflow-hidden`}>
+      <Image
+        src={image}
+        alt={title}
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 50vw"
+      />
+      <div className={`absolute inset-0 ${theme === "one" ? "bg-[#0055e3]/20" : theme === "two" ? "bg-[#d6ebff]/20" : "bg-[#cfe5ff]/20"}`} />
+      <div className="absolute bottom-0 left-0 p-8 text-white z-10">
+        <div className="inline-block rounded-full bg-black/20 backdrop-blur-md px-4 py-2 text-sm font-semibold">Paso {step}</div>
+        <h3 className="mt-4 text-3xl font-bold drop-shadow-md">{title}</h3>
       </div>
     </div>
   );
@@ -70,6 +80,7 @@ export default function GuiaPacientesPage() {
         intro={GUIDE_FLOW.steps[0].intro}
         highlights={GUIDE_FLOW.steps[0].highlights}
         theme={GUIDE_FLOW.steps[0].theme}
+        image="/images/hero-clinic.png"
       />
 
       <Split
@@ -79,6 +90,7 @@ export default function GuiaPacientesPage() {
         highlights={GUIDE_FLOW.steps[1].highlights}
         reverse
         theme={GUIDE_FLOW.steps[1].theme}
+        image="/images/hero-smile.png"
       />
 
       <section className="bg-[#0055e3] px-4 py-16 text-center text-white">
@@ -95,6 +107,7 @@ export default function GuiaPacientesPage() {
         intro={GUIDE_FLOW.finalStep.intro}
         highlights={GUIDE_FLOW.finalStep.highlights}
         theme="three"
+        image="/images/hero-smile.png"
       />
 
       <section className="bg-[#dee8f8] px-4 py-16 text-center">

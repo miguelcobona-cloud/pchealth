@@ -10,7 +10,12 @@ export function SiteHeader() {
   return (
     <>
       <div className="bg-[#0055e3] px-4 py-2 text-center text-sm font-semibold text-white">
-        {CLINIC.promo} · <Link href="/agendar" className="underline">AGENDAR CITA</Link>
+        {CLINIC.promo}{" "}
+        <Link href="/agendar" className="underline">AGENDAR AHORA</Link>
+        {" · "}
+        <a href={`https://wa.me/${CLINIC.phone}`} target="_blank" rel="noopener noreferrer" className="underline">
+          WHATSAPP
+        </a>
       </div>
       <header className="sticky top-0 z-30 border-b border-blue-100 bg-[rgba(255,255,250,0.95)] backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-4">
