@@ -1,0 +1,16 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" rx="36" fill="#EEF5FF"/>
+  <rect x="40" y="40" width="820" height="1120" rx="30" fill="white"/>
+  <rect x="70" y="70" width="350" height="1060" rx="24" fill="#F4EBDD"/>
+  <rect x="480" y="70" width="350" height="1060" rx="24" fill="#E5F1FF"/>
+  <text x="245" y="132" text-anchor="middle" fill="#8B6133" font-size="46" font-family="Arial" font-weight="700">ANTES</text>
+  <text x="655" y="132" text-anchor="middle" fill="#0055E3" font-size="46" font-family="Arial" font-weight="700">DESPUÉS</text>
+  <rect x="150" y="440" width="190" height="80" rx="24" fill="white"/>
+  <rect x="560" y="440" width="190" height="80" rx="24" fill="white"/>
+  <path d="M150 480C200 460 240 505 290 480C320 466 330 468 340 480" stroke="#B88C61" stroke-width="10" stroke-linecap="round"/>
+  <path d="M560 480H750" stroke="#D9E8FF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="600" cy="480" r="10" fill="#8CB7FF"/>
+  <circle cx="638" cy="480" r="10" fill="#8CB7FF"/>
+  <circle cx="676" cy="480" r="10" fill="#8CB7FF"/>
+  <circle cx="714" cy="480" r="10" fill="#8CB7FF"/>
+</svg>
